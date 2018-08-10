@@ -15,6 +15,7 @@ form, #nameChange {
   text-align: center;
   background-color: #3a6383;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  font-family: 'Archivo Black', sans-serif;
 }
 
 .jumbotron h1, h3 {
@@ -33,10 +34,10 @@ form, #nameChange {
 .results {
   margin-top: 25px;
   margin-bottom: 25px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 10px;
   text-align: center;
   font-style: italic;
+  font-family: sans-serif; serif;
 }
 
 html, body {
