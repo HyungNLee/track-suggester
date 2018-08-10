@@ -55,9 +55,31 @@ $(document).ready(function() {
       css++;
     }
 
-    alert(cSharp);
-    alert(ruby);
-    alert(css);
+    //math max Function
+    var max = Math.max(cSharp, ruby, css);
+
+    //If for return string
+    if (ruby === css || ruby === cSharp) {
+      if (a === "front") {
+        return "cssReact";
+      } else {
+        return "backEnd";
+      }
+    } else if (ruby === cSharp) {
+        return "backEnd";
+    } else if (ruby === css) {
+      if (a === "front") {
+        return "cssReact";
+      } else {
+        return "rubyRails";
+      }
+    } else if (max === cSharp) {
+      return "cSharpNet"
+    } else if (max === css) {
+      return "cssReact"
+    } else if (max === ruby) {
+      return "rubyRails"
+    }
   }
 
 
