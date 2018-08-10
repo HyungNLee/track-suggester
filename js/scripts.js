@@ -108,11 +108,15 @@ $(document).ready(function() {
   $("#nameChange").click(function() {
     $("#userName").slideDown();
     $("#nameChange").hide();
+    $(".results").hide();
+    $("#questions").slideUp();
   })
 
   //Submit questions
   $("#questions").submit(function(event) {
     event.preventDefault();
+
+    $(".results").hide();
 
     var q1Input = $("input:radio[name=q1]:checked").val();
     var q2Input = $("input:radio[name=q2]:checked").val();
@@ -120,7 +124,11 @@ $(document).ready(function() {
     var q4Input = $("input:radio[name=q4]:checked").val();
     var q5Input = $("input:radio[name=q5]:checked").val();
 
-    alert(determineTrack(q1Input, q2Input, q3Input, q4Input, q5Input));
+    if (boxesChecked(q1Input, q2Input, q3Input, q4Input, q5Input)) {
+      $("#" + determineTrack(q1Input, q2Input, q3Input, q4Input, q5Input)).fadeIn();
+    } else {
+      alert("Please answer all of the questions.");
+    }
 
   })
 

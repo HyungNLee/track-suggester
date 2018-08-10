@@ -2,10 +2,10 @@
   width:50%;
 }
 
-form {
+form, #nameChange {
   margin-bottom: 20px;
 }
 
-#nameChange {
+#nameChange, #questions, .results {
   display: none;
 }
