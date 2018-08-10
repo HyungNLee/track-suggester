@@ -9,14 +9,111 @@
   </head>
   <body>
     <div class="container">
+      <div class="jumbotron">
+        <h1>Epicodus</h1>
+        <h3>Answer these questions to find your course track<h3>
+      </div>
       <div class="form-container">
         <!-- Text input for user name -->
         <form id="userName">
-
+          <div class="form-group">
+            <label for="name">Please enter your name:</label>
+            <input id="name" class="form-control" type="text">
+          </div>
+          <button type="submit" class="btn btn-success">Submit Name</button>
         </form>
         <!-- Main questions to determine track -->
-        <form id="backEnd">
-
+        <form id="questions">
+          <!-- First question -->
+          <label>Do you like to work on the appearance of things or know the
+            behind-the-scenes workings?</label>
+          <div class="radio">
+            <label>
+              <input type="radio" name="q1" value="front" checked>
+              The appearance (front-end)
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="q1" value="back">
+              Behind-the-scenes (back-end)
+            </label>
+          </div>
+          <!-- Second question -->
+          <label>Which of these options would you like to work on?</label>
+          <div class="radio">
+            <label>
+              <input type="radio" name="q2" value="c#">
+              Desktop Applications
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="q2" value="css">
+              Mobile Applications
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="q2" value="ruby">
+              Websites
+            </label>
+          </div>
+          <!-- Third question -->
+          <label>Which of these languages would you like to work with most?</label>
+          <div class="radio">
+            <label>
+              <input type="radio" name="q3" value="c#">
+              C#
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="q3" value="css">
+              CSS
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="q3" value="ruby">
+              Ruby
+            </label>
+          </div>
+          <!-- Fourth question -->
+          <label>Which of these companies would you like to join most?</label>
+          <div class="radio">
+            <label>
+              <input type="radio" name="q4" value="c#">
+              Microsoft
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="q4" value="css">
+              Netflix
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="q4" value="ruby">
+              AirBnB
+            </label>
+          </div>
+          <!-- Fifth question -->
+          <label>Are you more interested in joining an established corporation
+             or a startup?</label>
+          <div class="radio">
+            <label>
+              <input type="radio" name="q5" value="corp">
+              Established Corporation
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="q5" value="startUp">
+              Startup Company
+            </label>
+          </div>
         </form>
       </div>
       <div class="result-container">
