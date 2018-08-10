@@ -22,6 +22,7 @@
           </div>
           <button type="submit" class="btn btn-success">Submit Name</button>
         </form>
+        <button id="nameChange" type="submit" class="btn btn-danger">Change Name</button>
         <!-- Main questions to determine track -->
         <form id="questions">
           <!-- First question -->
@@ -29,7 +30,7 @@
             behind-the-scenes workings?</label>
           <div class="radio">
             <label>
-              <input type="radio" name="q1" value="front" checked>
+              <input type="radio" name="q1" value="front">
               The appearance (front-end)
             </label>
           </div>
@@ -43,7 +44,7 @@
           <label>Which of these options would you like to work on?</label>
           <div class="radio">
             <label>
-              <input type="radio" name="q2" value="c#">
+              <input type="radio" name="q2" value="cSharp">
               Desktop Applications
             </label>
           </div>
@@ -63,7 +64,7 @@
           <label>Which of these languages would you like to work with most?</label>
           <div class="radio">
             <label>
-              <input type="radio" name="q3" value="c#">
+              <input type="radio" name="q3" value="cSharp">
               C#
             </label>
           </div>
@@ -83,7 +84,7 @@
           <label>Which of these companies would you like to join most?</label>
           <div class="radio">
             <label>
-              <input type="radio" name="q4" value="c#">
+              <input type="radio" name="q4" value="cSharp">
               Microsoft
             </label>
           </div>
@@ -114,17 +115,18 @@
               Startup Company
             </label>
           </div>
+          <button type="submit" class="btn btn-success">Find your track!</button>
         </form>
       </div>
       <div class="result-container">
         <div class="results" id="rubyRails">
-
+          <h3><span class="nameReturn"></span>, you should take the Ruby/Rails track at Epicodus!</h3>
         </div>
         <div class="results" id="cssReact">
-
+          <h3><span class="nameReturn"></span>, you should take the CSS/React track at Epicodus!</h3>
         </div>
-        <div class="results" id="c#Net">
-
+        <div class="results" id="cSharpNet">
+          <h3><span class="nameReturn"></span>, you should take the C#/.Net track at Epicodus!</h3>
         </div>
       </div>
     </div>
