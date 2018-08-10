@@ -9,3 +9,26 @@ form, #nameChange {
 #nameChange, #questions, .results {
   display: none;
 }
+
+.jumbotron {
+  margin-top: 15px;
+  text-align: center;
+  background-color: #3a6383;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.jumbotron h1, h3 {
+  font-weight: bold;
+  text-shadow: 1px 1px 2px white, 0 0 5px white;
+}
+
+.container {
+  background-color: #ebebeb;
+}
+
+.results {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  text-align: center;
+  font-style: italic;
+}
