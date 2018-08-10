@@ -1,7 +1,4 @@
 $(document).ready(function() {
-
-
-
   //function to determine if all boxes are checked
   function boxesChecked(a, b, c, d, e) {
     if (a && b && c && d && e) {
@@ -83,9 +80,6 @@ $(document).ready(function() {
   }
 
 
-
-
-
   //User Interface
   //Submit name
   $("#userName").submit(function(event) {
@@ -101,7 +95,6 @@ $(document).ready(function() {
     } else {
       alert("Please enter a name.");
     }
-
   })
 
   //Change name
@@ -129,8 +122,5 @@ $(document).ready(function() {
     } else {
       alert("Please answer all of the questions.");
     }
-
   })
-
-
 })

@@ -23,7 +23,10 @@ form, #nameChange {
 }
 
 .container {
-  background-color: #ebebeb;
+  background-color: #fafafa;
+  height: 100%;
+  min-height: 100%;
+  border: 1px solid #dadada;
 }
 
 .results {
@@ -31,4 +34,19 @@ form, #nameChange {
   margin-bottom: 25px;
   text-align: center;
   font-style: italic;
+}
+
+html, body {
+  height: 100%;
+  background-image: url("../img/background.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+img {
+  width: 35%;
+}
+
+.reactPic {
+  width: 25%;
 }
